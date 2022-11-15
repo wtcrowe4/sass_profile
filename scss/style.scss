@@ -1,0 +1,74 @@
+@import 'config';
+@import 'home';
+
+body {
+    background: $primary-color;
+    color: white;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1;
+}
+
+h1, h2, h3 {
+    font-weight: 400;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    padding: 1rem;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+
+    .social-icons {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 1rem;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        height: 100%;
+        width: 100%;
+        font-size: 2.5rem;
+        
+        a {
+            margin: 0.5rem;
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+    }
+}
+
+footer {
+    font-size: 1.5rem;
+    position: fixed;
+    bottom: .4rem;
+    right: 1rem;
+    text-align: right;
+    padding: 1rem;
+    color: white;
+    margin-right: 3rem;
+  
+   
+}
+
+.home {
+    height: 100%;
+    padding-top: 40vh;
+    overflow: hidden;
+    align-items: center;
+}
