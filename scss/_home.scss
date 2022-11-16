@@ -6,17 +6,35 @@
     background: 
         linear-gradient(
             to right,
-            rgba($primary-color, 1),
-            rgba($primary-color, 0.1)
+            rgba($primary-color, .9),
+            rgba($primary-color, 0)
+        ), linear-gradient(
+            to left,
+            rgba($primary-color, .9),
+            rgba($primary-color, 0)
         ),
         url('../img/hero.jpg') center top;
     background-size: cover;
-}
+    font-size: 2rem;
 
-&__name {
-    font-size: 5rem;
-    color: white;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    margin-bottom: 1rem;
+
+    &__name {
+        font-size: 6rem;
+        color: set-text-color($primary-color);
+        text-shadow: 0 0 10px $primary-color;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        margin-top: 1rem;
+        border-bottom: 1px solid white;
+        padding-right: 2rem;
+    
+        &--last {
+            font-size: 8rem;
+            color: $secondary-color;
+            font-weight: 600;
+            padding-left: 2rem;
+
+        }
+    }
 }
 

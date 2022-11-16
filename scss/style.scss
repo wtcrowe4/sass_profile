@@ -1,9 +1,10 @@
 @import 'config';
 @import 'home';
+@import 'nav';
 
 body {
     background: $primary-color;
-    color: white;
+    color: set-text-color($primary-color);
     height: 100vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1;
@@ -15,7 +16,7 @@ h1, h2, h3 {
 }
 
 a {
-    color: white;
+    color: set-text-color($primary-color);
     text-decoration: none;
 }
 
@@ -45,6 +46,7 @@ main {
         font-size: 2.5rem;
         
         a {
+            @include transition-ease;
             margin: 0.5rem;
             &:hover {
                 color: $secondary-color;
@@ -60,7 +62,7 @@ footer {
     right: 1rem;
     text-align: right;
     padding: 1rem;
-    color: white;
+    color: set-text-color($primary-color);
     margin-right: 3rem;
   
    
